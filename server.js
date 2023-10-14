@@ -15,11 +15,11 @@ const db = knex({
   // connect to your own database here:
   client: 'pg',
   connection: {
-    ssl: {
-      rejectUnauthorized: false
-    }
+    host : '127.0.0.1',
+    user : 'kylpvn',
+    password : '',
+    database : 'rico.ai'
   }
-  
 });
 
 db.select('*').from('users').then(data => {
